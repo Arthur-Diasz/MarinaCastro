@@ -1,5 +1,5 @@
 :root {
-    --white1: #efefef ;
+    --white1: #EFEFEF;
     --grey1: #333333;
     --gaux: #3D3D3D;
     --black: #111111;
@@ -100,10 +100,6 @@ h6 {
     background-attachment: fixed;
 }
 
-#btn-hero {
-    border: 2px solid #FFF;
-}
-
 #inicio {
     margin-top: -15vh;
     color: var(--white1);
@@ -112,12 +108,34 @@ h6 {
 
 #btn-hero {
     transition: all 0.4s ease;
-    color: #FFF;
+    color: var(--black);
+    background-color: var(--white1);
+    font-size: 22px;
 }
 
 #btn-hero:hover {
     background-color: #FFF;
     color: black;
+}
+
+#btn-hero svg {
+    transition: all 0.4s ease;
+}
+
+#btn-hero:hover svg {
+    animation: arrowBounce 1s ease infinite;
+}
+
+@keyframes arrowBounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
 }
 
 #inicio h1 {
